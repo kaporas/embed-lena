@@ -4,8 +4,8 @@ demo:
   fileupload: .
 primary:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.178.0.4:3306/demo?useUnicode=true&serverTimezone=Asia/Seoul
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.178.0.5:3306/petclinic
     user: root
     password: "root"
     initialization-mode: always
@@ -17,8 +17,8 @@ primary:
       maximum-pool-size: 15
 secondary:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.178.0.4:3306/demo?useUnicode=true&serverTimezone=Asia/Seoul
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://10.178.0.5:3306/petclinic
     user: root
     password: "root"
     initialization-mode: always
