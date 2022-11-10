@@ -5,9 +5,9 @@ demo:
 primary:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://10.178.0.5:3306/petclinic
+    url: jdbc:mysql://34.64.112.225:3306/demo1?useUnicode=true&serverTimezone=Asia/Seoul
     user: root
-    password: "root"
+    password: "root01"
     initialization-mode: always
     sql-script-encoding: utf-8
     hibernate:
@@ -18,12 +18,26 @@ primary:
 secondary:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://10.178.0.5:3306/petclinic
+    url: jdbc:mysql://34.64.112.225:3306/demo2?useUnicode=true&serverTimezone=Asia/Seoul
     user: root
-    password: "root"
+    password: "root01"
     initialization-mode: always
     sql-script-encoding: utf-8
     hibernate:
       dialect: org.hibernate.dialect.MySQL5Dialec
     hikari:
       maximum-pool-size: 5
+server:
+  lena:
+#     session:
+#       enabled: true
+#       primary-host: session-0.session.lena.svc.cluster.local
+#       primary-port: 5180
+#       secondary-host: session-1.session.lena.svc.cluster.local
+#       secondary-port: 5180
+#       external_session_store_enabled: true
+    stuckThread:
+      threshold: 1200
+    connector:
+      uri-encoding: UTF-8
+      use-body-encoding-for-uri: true
