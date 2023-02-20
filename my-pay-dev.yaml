@@ -5,7 +5,7 @@ demo:
 primary:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mysql://34.64.112.225:3306/demo1?useUnicode=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://34.64.170.70:3306/demo?useUnicode=true&serverTimezone=Asia/Seoul
     user: root
     password: "root01"
     initialization-mode: always
@@ -18,7 +18,7 @@ primary:
 secondary:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mysql://34.64.112.225:3306/demo2?useUnicode=true&serverTimezone=Asia/Seoul
+    url: jdbc:mysql://34.64.170.70:3306/demo2?useUnicode=true&serverTimezone=Asia/Seoul
     user: root
     password: "root01"
     initialization-mode: always
