@@ -1,5 +1,5 @@
 demo:
-  name: "demo test"
+  name: "change dev value"
   version: "0.1"
   fileupload: .
 primary:
